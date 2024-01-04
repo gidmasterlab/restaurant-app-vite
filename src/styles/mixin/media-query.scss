@@ -1,0 +1,26 @@
+$breakpoint-mobile: 0;
+$breakpoint-tablet: 1;
+$breakpoint-desktop: 2;
+
+@mixin mediaQuery($breakpoint) {
+	// mobile
+	@if $breakpoint == $breakpoint-mobile {
+		@media (min-width: 0) and (max-width: 767px) {
+			@content;
+		}
+	}
+
+	// table
+	@if $breakpoint == $breakpoint-tablet {
+		@media (min-width: 768px) and (max-width: 1170px) {
+			@content;
+		}
+	}
+
+	// desktop
+	@if $breakpoint == $breakpoint-desktop {
+		@media (min-width: 992px) {
+			@content;
+		}
+	}
+}

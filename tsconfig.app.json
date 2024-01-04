@@ -1,0 +1,27 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
+	"include": [
+		"env.d.ts",
+		"src/**/*",
+		"src/**/*.vue",
+		"src/**/*.json"
+	],
+	"exclude": [
+		"src/**/*.spec.ts",
+		"src/**/*.stories.ts"
+	],
+	"compilerOptions": {
+		"strictNullChecks": false,
+		"composite": true,
+		"noEmit": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		},
+		"types": [
+			"vite/client"
+		]
+	}
+}

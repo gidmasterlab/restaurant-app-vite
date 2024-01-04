@@ -1,0 +1,67 @@
+h1 {
+	font-size: 60px;
+	line-height: 72px;
+	font-weight: 500;
+	font-style: normal;
+
+	@include mediaQuery($breakpoint-mobile) {
+		font-size: 35px;
+		line-height: 42px;
+	}
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 500;
+	font-style: normal;
+
+	@include mediaQuery($breakpoint-mobile) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21px;
+	font-style: normal;
+
+	@include mediaQuery($breakpoint-mobile) {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
+
+span,
+p {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	font-style: normal;
+
+	small {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	strong {
+		font-weight: 500;
+	}
+
+	@include mediaQuery($breakpoint-mobile) {
+		font-size: 14px;
+		line-height: 17px;
+		font-weight: 400;
+
+		small {
+			font-size: 12px;
+			line-height: 15px;
+		}
+
+		strong {
+			font-weight: 500;
+		}
+	}
+}
